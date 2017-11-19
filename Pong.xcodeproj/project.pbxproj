@@ -15,6 +15,7 @@
 		B95B32671EBB94DA00DE8101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95B32651EBB94DA00DE8101 /* LaunchScreen.storyboard */; };
 		B95B32721EBB94DA00DE8101 /* PongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B32711EBB94DA00DE8101 /* PongTests.m */; };
 		B95B327D1EBB94DA00DE8101 /* PongUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B327C1EBB94DA00DE8101 /* PongUITests.m */; };
+		B95B329C1EBBD80B00DE8101 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B95B329B1EBBD80B00DE8101 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		B95B32781EBB94DA00DE8101 /* PongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95B327C1EBB94DA00DE8101 /* PongUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PongUITests.m; sourceTree = "<group>"; };
 		B95B327E1EBB94DA00DE8101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95B329A1EBBD80B00DE8101 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B95B329B1EBBD80B00DE8101 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				B95B325D1EBB94DA00DE8101 /* ViewController.h */,
 				B95B325E1EBB94DA00DE8101 /* ViewController.m */,
 				B95B32601EBB94DA00DE8101 /* Main.storyboard */,
+				B95B329A1EBBD80B00DE8101 /* SecondViewController.h */,
+				B95B329B1EBBD80B00DE8101 /* SecondViewController.m */,
 				B95B32631EBB94DA00DE8101 /* Assets.xcassets */,
 				B95B32651EBB94DA00DE8101 /* LaunchScreen.storyboard */,
 				B95B32681EBB94DA00DE8101 /* Info.plist */,
@@ -276,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B95B329C1EBBD80B00DE8101 /* SecondViewController.m in Sources */,
 				B95B325F1EBB94DA00DE8101 /* ViewController.m in Sources */,
 				B95B325C1EBB94DA00DE8101 /* AppDelegate.m in Sources */,
 				B95B32591EBB94DA00DE8101 /* main.m in Sources */,
@@ -432,7 +438,7 @@
 				DEVELOPMENT_TEAM = D6CB33X35G;
 				INFOPLIST_FILE = Pong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Superinteractive.Pong;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.superinteractive.sitpong2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -444,7 +450,7 @@
 				DEVELOPMENT_TEAM = D6CB33X35G;
 				INFOPLIST_FILE = Pong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Superinteractive.Pong;
+				PRODUCT_BUNDLE_IDENTIFIER = au.com.superinteractive.sitpong2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -518,6 +524,7 @@
 				B95B32831EBB94DA00DE8101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B95B32841EBB94DA00DE8101 /* Build configuration list for PBXNativeTarget "PongTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +533,7 @@
 				B95B32861EBB94DA00DE8101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B95B32871EBB94DA00DE8101 /* Build configuration list for PBXNativeTarget "PongUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +542,7 @@
 				B95B32891EBB94DA00DE8101 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,26 +1,161 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tLP-C1-oM5">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Second View Controller-->
+        <scene sceneID="WGq-0l-god">
+            <objects>
+                <viewController storyboardIdentifier="MainScreen" id="tLP-C1-oM5" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jP7-Wg-ECJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xnF-6z-PHa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4dC-qh-Vwn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QG8-qg-Om6">
+                                <rect key="frame" x="286" y="533" width="27" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="hHQ-I1-0pp"/>
+                                    <constraint firstAttribute="height" constant="27" id="jVi-iu-9MV"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Connect-Icon-grey">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="configureCentral:" destination="tLP-C1-oM5" eventType="touchUpInside" id="fBk-5A-Zcb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt3-JU-ASL">
+                                <rect key="frame" x="7" y="533" width="27" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="UTX-6t-9ui"/>
+                                    <constraint firstAttribute="width" constant="27" id="VUs-SP-u7g"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="SI logo 100x60-1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="linkHome:" destination="tLP-C1-oM5" eventType="touchUpInside" id="cfa-69-xmr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJ7-W9-Rp7">
+                                <rect key="frame" x="125" y="249" width="71" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="PVh-kc-KdK"/>
+                                    <constraint firstAttribute="width" constant="71" id="gD0-DK-CDh"/>
+                                </constraints>
+                                <state key="normal" image="white button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playGame:" destination="tLP-C1-oM5" eventType="touchUpInside" id="kMX-Ib-zge"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ePONG" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMg-b8-YH7">
+                                <rect key="frame" x="94" y="155" width="133.5" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gJ7-W9-Rp7" firstAttribute="centerX" secondItem="aMg-b8-YH7" secondAttribute="centerX" id="A6T-gf-uPO"/>
+                            <constraint firstAttribute="trailing" secondItem="QG8-qg-Om6" secondAttribute="trailing" constant="7" id="Iqf-36-HHh"/>
+                            <constraint firstItem="gJ7-W9-Rp7" firstAttribute="centerX" secondItem="4dC-qh-Vwn" secondAttribute="centerX" id="PHB-DS-t8V"/>
+                            <constraint firstItem="gJ7-W9-Rp7" firstAttribute="top" secondItem="aMg-b8-YH7" secondAttribute="bottom" constant="48" id="SaE-uP-Y4L"/>
+                            <constraint firstItem="xnF-6z-PHa" firstAttribute="top" secondItem="Tt3-JU-ASL" secondAttribute="bottom" constant="8" id="Usz-rF-8Eu"/>
+                            <constraint firstItem="xnF-6z-PHa" firstAttribute="top" secondItem="QG8-qg-Om6" secondAttribute="bottom" constant="8" id="ZgB-po-n2g"/>
+                            <constraint firstItem="Tt3-JU-ASL" firstAttribute="leading" secondItem="4dC-qh-Vwn" secondAttribute="leading" constant="7" id="dci-oU-cuy"/>
+                            <constraint firstItem="gJ7-W9-Rp7" firstAttribute="centerY" secondItem="4dC-qh-Vwn" secondAttribute="centerY" id="pdv-nR-Sk8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="Game" id="2Ag-o4-3cO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iie-st-nRU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2651.25" y="138.38028169014083"/>
+        </scene>
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Game" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="paddle" translatesAutoresizingMaskIntoConstraints="NO" id="fhJ-fI-Ffd">
+                                <rect key="frame" x="110" y="440" width="98" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="paddle"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score : 0   " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWe-AF-j3y">
+                                <rect key="frame" x="205" y="20" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lks-nt-ZFM">
+                                <rect key="frame" x="16" y="15" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tLP-C1-oM5" kind="presentation" id="OiK-Kx-ixm"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5xV-88-fk4">
+                                <rect key="frame" x="0.0" y="463" width="320" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" identifier="paddle"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="L0M-ql-jiA">
+                                <rect key="frame" x="145" y="20" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="LQo-B2-0LN"/>
+                    <connections>
+                        <outlet property="Ball" destination="L0M-ql-jiA" id="hb9-32-otG"/>
+                        <outlet property="Paddle" destination="fhJ-fI-Ffd" id="UlN-Tl-AEt"/>
+                        <outlet property="paddleInv" destination="5xV-88-fk4" id="YaU-Ii-Lb3"/>
+                        <outlet property="scoreLabel" destination="OWe-AF-j3y" id="O3J-iU-UdM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3496.875" y="137.32394366197184"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Connect-Icon-grey" width="1200" height="1200"/>
+        <image name="SI logo 100x60-1" width="80" height="133"/>
+        <image name="ball" width="30" height="30"/>
+        <image name="paddle" width="100" height="30"/>
+        <image name="white button" width="175" height="175"/>
+    </resources>
+    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
